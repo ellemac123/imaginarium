@@ -1,0 +1,9 @@
+{% if cards %}
+    <ul>
+    {% for card in cards %}
+        <li><a href="/cards/{{ card.id }}/">{{ card.identifier }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Cards Found!</p>
+{% endif %}
