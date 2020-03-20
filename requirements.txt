@@ -1,2 +1,5 @@
+black
 Django
+isort
+pylint
 sentry_sdk
