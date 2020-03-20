@@ -112,6 +112,17 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 category = "main"
+description = "Extensions for Django"
+name = "django-extensions"
+optional = false
+python-versions = "*"
+version = "2.2.8"
+
+[package.dependencies]
+six = ">=1.2"
+
+[[package]]
+category = "main"
 description = "A Python utility / library to sort Python imports."
 name = "isort"
 optional = false
@@ -258,7 +269,7 @@ python-versions = "*"
 version = "1.11.2"
 
 [metadata]
-content-hash = "ab7b6520a3eb3fe40f807fcdf0ac44ac001cee3a72bf50d4b19c9357406c7cfe"
+content-hash = "59ef166e35a1ab24666d64d17159e5e9bfd643d151cd00ae3cebc2f1fa2072d5"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -297,6 +308,10 @@ colorama = [
 django = [
     {file = "Django-3.0.4-py3-none-any.whl", hash = "sha256:89e451bfbb815280b137e33e454ddd56481fdaa6334054e6e031041ee1eda360"},
     {file = "Django-3.0.4.tar.gz", hash = "sha256:50b781f6cbeb98f673aa76ed8e572a019a45e52bdd4ad09001072dfd91ab07c8"},
+]
+django-extensions = [
+    {file = "django-extensions-2.2.8.tar.gz", hash = "sha256:2699cc1d6fb4bd393c0b5832fea4bc685f2ace5800b3c9ff222b2080f161ac04"},
+    {file = "django_extensions-2.2.8-py2.py3-none-any.whl", hash = "sha256:1a03c4e8bade575f8c2be6c76456f8a2be3f9b02ab9f47d3535afa9562dc0493"},
 ]
 isort = [
     {file = "isort-4.3.21-py2.py3-none-any.whl", hash = "sha256:6e811fcb295968434526407adb8796944f1988c5b65e8139058f2014cbe100fd"},

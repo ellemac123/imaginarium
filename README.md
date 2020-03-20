@@ -23,6 +23,14 @@ The following Poetry installation is intended for MacOS.
 2. Source the newly installed poetry env `source $HOME/.poetry/env`
 3. Install the dependencies with `poetry install`
 
+
+## Sentry and Error Handling
+
+Monitoring of errors is handled by [Sentry](sentry.io). To access the errors, you must have
+permission to my `imaginarium-categories` project. All errors thrown by Django will be picked up 
+by the sentry integration to the settings and will be displayed in detail in the Sentry UI. To 
+gain access to this dashboard, contact me directly haha.
+
 ## Further Readings and Associated Links
 
 1. [Imaginarium Rules](https://boardgamegeek.com/boardgame/146548/imaginarium) from board game geek. 

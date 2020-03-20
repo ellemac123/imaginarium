@@ -1,7 +1,7 @@
-black
-Django
-django-extensions
-isort
-Pillow
-pylint
-sentry_sdk
+black>=19.10b0
+Django>=3.0.4
+django-extensions>=2.2.8
+isort>=4.3.21
+Pillow>=7.0.0
+pylint>=2.4.4
+sentry_sdk>=0.14.3
