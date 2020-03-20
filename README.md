@@ -21,8 +21,9 @@ The following Poetry installation is intended for MacOS.
 
 1. Install Poetry `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python`
 2. Source the newly installed poetry env `source $HOME/.poetry/env`
+3. Install the dependencies with `poetry install`
 
 ## Further Readings and Associated Links
 
-1. [Imaginarium Rules](https://boardgamegeek.com/boardgame/146548/imaginarium)from board game geek. 
-2. [Official Imaginarium Game Site](https://cosmodrome.games/)
+1. [Imaginarium Rules](https://boardgamegeek.com/boardgame/146548/imaginarium) from board game geek. 
+2. [Official Imaginarium Game Site](https://cosmodrome.games/catalog/for_all/imadzhinarium-klassika/)
