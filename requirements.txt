@@ -1,2 +1,3 @@
-Pillow
 Django
+Pillow
+sentry_sdk
