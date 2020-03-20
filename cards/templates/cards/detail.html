@@ -1,0 +1,10 @@
+{% load static %}
+ <link href="{% static '/css/cards/detail.css' %}" rel="stylesheet"  type="text/css"/>
+
+{% if card %}
+    <h1>Hello! You are looking at a Card Called: {{ card.card_name }}</h1>
+    Details:
+
+{% else %}
+    <p>No Card with that ID Found!</p>
+{% endif %}

@@ -1,7 +1,7 @@
 {% if cards %}
     <ul>
     {% for card in cards %}
-        <li><a href="/cards/{{ card.id }}/">{{ card.identifier }}</a></li>
+        <li><a href="/cards/card/{{ card.id }}/">{{ card.card_name }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

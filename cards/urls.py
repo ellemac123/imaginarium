@@ -1,8 +1,9 @@
 from django.urls import path
+from django.conf.urls import url
 
 from . import views
 
 urlpatterns = [
-    path("", views.index, name="index"),
-    path("<int:cards_id>/", views.detail, name="detail"),
+    url("^$", views.index, name="index"),
+    path("card/<int:cards_id>/", views.detail, name="detail"),
 ]
