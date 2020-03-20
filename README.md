@@ -10,7 +10,7 @@ hopefully one day I will be able to mix my cards up and have one MASSIVE deck!
 
 ### Installing Required Libraries
 
-####PIP
+#### PIP
 
 To install the required libraries, use pip! Just run `pip install -r requirements.txt`
 in the top level directory. This will install all the libraries needed to run!
@@ -24,5 +24,5 @@ The following Poetry installation is intended for MacOS.
 
 ## Further Readings and Associated Links
 
-1. [Imaginarium Rules]("https://boardgamegeek.com/boardgame/146548/imaginarium")from board game geek. 
-2. [Official Imaginarium Game Site]("https://cosmodrome.games/")
+1. [Imaginarium Rules](https://boardgamegeek.com/boardgame/146548/imaginarium)from board game geek. 
+2. [Official Imaginarium Game Site](https://cosmodrome.games/)
