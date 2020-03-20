@@ -26,7 +26,7 @@ The following Poetry installation is intended for MacOS.
 
 ## Sentry and Error Handling
 
-Monitoring of errors is handled by [Sentry](sentry.io). To access the errors, you must have
+Monitoring of errors is handled by [Sentry](www.sentry.io). To access the errors, you must have
 permission to my `imaginarium-categories` project. All errors thrown by Django will be picked up 
 by the sentry integration to the settings and will be displayed in detail in the Sentry UI. To 
 gain access to this dashboard, contact me directly haha.
