@@ -7,10 +7,10 @@ from .models import Card
 def index(request):
     cards = Card.objects.all()
 
-    template = loader.get_template('cards/index.html')
+    template = loader.get_template("cards/index.html")
 
     context = {
-        'cards': cards,
+        "cards": cards,
     }
     return HttpResponse(template.render(context, request))
 
