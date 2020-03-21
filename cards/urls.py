@@ -1,9 +1,10 @@
 from django.urls import path
 from django.conf.urls import url
 
-from . import views
+from .views import decks, cards
 
 urlpatterns = [
-    url("^$", views.index, name="index"),
-    path("card/<int:cards_id>/", views.detail, name="detail"),
+    url("^$", decks.index, name="index"),
+    url("cards/<str:deck_cards>/", cards.index, name="cards_index"),
+    path("cards/<str:deck_cards>/card/<int:cards_id>/", cards.detail, name="cards_detail"),
 ]

@@ -1,10 +1,10 @@
 from django.http import HttpResponse
 from django.template import loader
 
-from .models import Card
+from cards.models import Card
 
 
-def index(request):
+def index(request, deck_cards):
     """
     The index page for the Card Model. This will call the index.html template
     that corresponds to the cards page.
@@ -14,7 +14,7 @@ def index(request):
 
     Returns: (HttpResponse) containing the rendered index template
     """
-    cards = Card.objects.all()
+    cards = Card.objects.get(deck=deck_cards)
 
     template = loader.get_template("cards/index.html")
 
