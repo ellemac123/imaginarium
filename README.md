@@ -23,6 +23,13 @@ The following Poetry installation is intended for MacOS.
 2. Source the newly installed poetry env `source $HOME/.poetry/env`
 3. Install the dependencies with `poetry install`
 
+### Running the Django Application
+This application is built of the Django Framework. Here are the steps to run it. 
+1. Make all database migrations with `python manage.py makemigrations`. Followed by
+`python manage.py migrate`.
+2. Run the application server on localhost `python manage.py runserver`.
+3. Open your chosen browser and navigate to `localhost:8000`!
+4. Voila
 
 ## Sentry and Error Handling
 
@@ -35,3 +42,12 @@ gain access to this dashboard, contact me directly haha.
 
 1. [Imaginarium Rules](https://boardgamegeek.com/boardgame/146548/imaginarium) from board game geek. 
 2. [Official Imaginarium Game Site](https://cosmodrome.games/catalog/for_all/imadzhinarium-klassika/)
+
+
+## Next steps
+
+1. Use Docker
+2. Tests
+3. User authentication, with default open login
+4. Celery?
+5. Make it look pretty!
