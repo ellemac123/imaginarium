@@ -1,5 +1,5 @@
 <ul>
 {% for deck in decks %}
-    <li><a href="cards/{{ deck }}">{{ deck }}</a></li>
+    <li><a href="cards/{{ deck.0 }}">{{ deck.1 }}</a></li>
 {% endfor %}
 </ul>

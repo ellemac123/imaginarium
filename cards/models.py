@@ -9,11 +9,11 @@ class Deck(models.Model):
     """
     A deck object will be one of the card deck choices. This may be removed in the future.
     """
-    deck_name = models.CharField(max_length=30)
-    deck = models.CharField(max_length=10, choices=DECK_CHOICES, default="original")
+    type = models.CharField(max_length=10, choices=DECK_CHOICES, default=1)
+    cover_image = models.ImageField(upload_to=get_image_path, blank=True, null=True)
 
-    def __str__(self):
-        return self.deck_name
+    def deck_name(self):
+        return DECK_CHOICES[self.type][1]
 
 
 class Card(models.Model):

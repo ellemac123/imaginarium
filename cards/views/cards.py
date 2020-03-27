@@ -14,7 +14,7 @@ def index(request, deck_cards):
 
     Returns: (HttpResponse) containing the rendered index template
     """
-    cards = Card.objects.get(deck=deck_cards)
+    cards = Card.objects.filter(deck=deck_cards)
 
     template = loader.get_template("cards/index.html")
 

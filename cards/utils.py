@@ -1,11 +1,11 @@
 import os
 
 DECK_CHOICES = [
-    ("original", "ORIGINAL"),
-    ("persephone", "PERSEPHONE"),
-    ("chimera", "CHIMERA"),
-    ("pandora", "PANDORA"),
-    ("odyssey", "ODYSSEY"),
+    (1, "ORIGINAL"),
+    (2, "PERSEPHONE"),
+    (3, "CHIMERA"),
+    (4, "PANDORA"),
+    (5, "ODYSSEY"),
 ]
 
 

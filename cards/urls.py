@@ -5,6 +5,6 @@ from .views import decks, cards
 
 urlpatterns = [
     url("^$", decks.index, name="index"),
-    url("cards/<str:deck_cards>/", cards.index, name="cards_index"),
+    path("cards/<str:deck_cards>/", cards.index, name="cards_index"),
     path("cards/<str:deck_cards>/card/<int:cards_id>/", cards.detail, name="cards_detail"),
 ]

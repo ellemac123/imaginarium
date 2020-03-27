@@ -17,9 +17,7 @@ def index(request):
     deck_categories = []
 
     for deck in DECK_CHOICES:
-        deck_categories.append(deck[0])
-
-    print(deck_categories)
+        deck_categories.append(deck)
 
     template = loader.get_template("decks/index.html")
 
