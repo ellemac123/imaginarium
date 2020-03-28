@@ -11,7 +11,7 @@
         "pk": 2,
         "model": "cards.deck",
         "fields": {
-            "type": 4,
+            "type": 2,
             "cover_image": "decks/Percephone.jpg"
         }
     },
@@ -19,8 +19,8 @@
         "pk": 3,
         "model": "cards.deck",
         "fields": {
-            "type": 4,
-            "cover_image": "decks/chimerac.jpg"
+            "type": 3,
+            "cover_image": "decks/chimera.jpg"
         }
     },
     {
@@ -35,7 +35,7 @@
         "pk": 5,
         "model": "cards.deck",
         "fields": {
-            "type": 4,
+            "type": 5,
             "cover_image": "decks/odyssey.jpg"
         }
     },
@@ -43,7 +43,7 @@
         "pk": 6,
         "model": "cards.deck",
         "fields": {
-            "type": 4,
+            "type": 6,
             "cover_image": "decks/ariadne.jpg"
         }
     }

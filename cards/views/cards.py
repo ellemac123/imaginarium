@@ -39,8 +39,6 @@ def detail(request, cards_id):
 
     template = loader.get_template("cards/detail.html")
 
-    context = {
-        "card": card
-    }
+    context = {"card": card}
 
     return HttpResponse(template.render(context, request))

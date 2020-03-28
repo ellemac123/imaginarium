@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
 
-from cards.utils import DECK_CHOICES
+from cards.models import Deck
 
 
 def index(request):
@@ -14,15 +14,12 @@ def index(request):
 
     Returns: (HttpResponse) containing the rendered index template
     """
-    deck_categories = []
-
-    for deck in DECK_CHOICES:
-        deck_categories.append(deck)
+    decks = Deck.objects.all()
 
     template = loader.get_template("decks/index.html")
 
     context = {
-        "decks": deck_categories,
+        "decks": decks,
     }
 
     return HttpResponse(template.render(context, request))

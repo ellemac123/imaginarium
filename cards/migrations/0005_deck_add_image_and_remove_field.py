@@ -7,22 +7,31 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cards', '0004_rename_names'),
+        ("cards", "0004_rename_names"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='deck',
-            name='deck',
-        ),
+        migrations.RemoveField(model_name="deck", name="deck",),
         migrations.AddField(
-            model_name='deck',
-            name='cover_image',
-            field=models.ImageField(blank=True, null=True, upload_to=cards.utils.get_image_path),
+            model_name="deck",
+            name="cover_image",
+            field=models.ImageField(
+                blank=True, null=True, upload_to=cards.utils.get_image_path
+            ),
         ),
         migrations.AlterField(
-            model_name='deck',
-            name='deck_name',
-            field=models.CharField(choices=[(1, 'ORIGINAL'), (2, 'PERSEPHONE'), (3, 'CHIMERA'), (4, 'PANDORA'), (5, 'ODYSSEY')], default=1, max_length=10),
+            model_name="deck",
+            name="deck_name",
+            field=models.CharField(
+                choices=[
+                    (1, "ORIGINAL"),
+                    (2, "PERSEPHONE"),
+                    (3, "CHIMERA"),
+                    (4, "PANDORA"),
+                    (5, "ODYSSEY"),
+                ],
+                default=1,
+                max_length=10,
+            ),
         ),
     ]

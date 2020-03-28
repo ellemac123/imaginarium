@@ -1,6 +1,12 @@
 {% load static %}
+
 <ul>
 {% for deck in decks %}
-    <li><a href="cards/{{ deck.0 }}">{{ deck.1 }}</a></li>
+    <li>
+
+    <a href="cards/{{ deck.type }}">
+    <img src="static/{{ deck.cover_image }}" alt={{ deck.deck_name }} style="width:42px;height:42px;border:0;">
+    </a>
+    </li>
 {% endfor %}
 </ul>
