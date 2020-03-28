@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1,
+        "model": "cards.deck",
+        "fields": {
+            "type": 1,
+            "cover_image": "decks/original.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "cards.deck",
+        "fields": {
+            "type": 4,
+            "cover_image": "decks/Percephone.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "cards.deck",
+        "fields": {
+            "type": 4,
+            "cover_image": "decks/chimerac.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "cards.deck",
+        "fields": {
+            "type": 4,
+            "cover_image": "decks/Pandora.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "cards.deck",
+        "fields": {
+            "type": 4,
+            "cover_image": "decks/odyssey.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "cards.deck",
+        "fields": {
+            "type": 4,
+            "cover_image": "decks/ariadne.jpg"
+        }
+    }
+]

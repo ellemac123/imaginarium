@@ -6,6 +6,7 @@ DECK_CHOICES = [
     (3, "CHIMERA"),
     (4, "PANDORA"),
     (5, "ODYSSEY"),
+    (6, "ARIADNE")
 ]
 
 

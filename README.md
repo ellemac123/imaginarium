@@ -25,11 +25,14 @@ The following Poetry installation is intended for MacOS.
 
 ### Running the Django Application
 This application is built of the Django Framework. Here are the steps to run it. 
-1. Make all database migrations with `python manage.py makemigrations`. Followed by
+1. Change directories to be in the top level of the `imaginarium` project. `cd imaginarium`
+2. Make all database migrations with `python manage.py makemigrations`. Followed by
 `python manage.py migrate`.
-2. Run the application server on localhost `python manage.py runserver`.
-3. Open your chosen browser and navigate to `localhost:8000`!
-4. Voila
+3. Install the pre-created fixtures. These fixtures contain the decks and their associated 
+images. `python manage.py loaddata imaginarium/fixtures.json`
+4. Run the application server on localhost `python manage.py runserver`.
+5. Open your chosen browser and navigate to `localhost:8000`!
+6. Voila
 
 ## Sentry and Error Handling
 
