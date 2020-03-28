@@ -1,12 +1,27 @@
 {% load static %}
+{% static "" as static_url %}
+<link href="{% static '/css/decks/index.css' %}" rel="stylesheet"  type="text/css"/>
+<body>
+<h1>Imaginarium Card Decks</h1>
 
-<ul>
+<ul class="deck-display">
 {% for deck in decks %}
     <li>
-
-    <a href="cards/{{ deck.type }}">
-    <img src="static/{{ deck.cover_image }}" alt={{ deck.deck_name }} style="width:42px;height:42px;border:0;">
-    </a>
+    <div class="wrap">
+        <div class="deck-image">
+            <a href="cards/{{ deck.type }}">
+                <img src="{{ static_url }}/{{ deck.cover_image }}" alt={{ deck.deck_name }} style="width:240px;height:240px;border:0;">
+            </a>
+        </div>
+        <div class="deck-thumbnail-name">
+            <span class="deck-thumbnail-title">
+                <a href="cards/{{ deck.type }}">
+                    {{ deck.deck_name }}
+                </a>
+            </span>
+        </div>
+    </div>
     </li>
 {% endfor %}
 </ul>
+</body>
