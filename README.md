@@ -4,7 +4,8 @@ This project was created to categorise the cards for the Russian board game Imag
 I own six very different decks and I want to mix them up, but would like to know
 which original decks they came in, in case I ever want to reorganise. So here is this project. 
 It is a work in progress, as I have very little time to contribute to this project, but
-hopefully one day I will be able to mix my cards up and have one MASSIVE deck!
+hopefully one day I will be able to mix my cards up and have one MASSIVE deck! Basically I just
+want to play around with Django templating and front-end.
 
 ## Running the Code
 
