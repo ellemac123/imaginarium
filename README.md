@@ -55,3 +55,4 @@ gain access to this dashboard, contact me directly haha.
 3. User authentication, with default open login
 4. Celery?
 5. Make it look pretty!
+6. Card recognition using something like: https://stackoverflow.com/questions/46479237/find-image-from-a-database-of-images
