@@ -1,9 +1,59 @@
+{% load static %}
+{% static "" as static_url %}
+<link href="{% static '/css/cards/index.css' %}" rel="stylesheet"  type="text/css"/>
+<body>
+<div id="header_logo">
+    <div>
+        <a id="logo" href="/">
+            <img src="/static/images/home_icon.png" height="24" width="24" href="/">
+        </a>
+    </div>
+    <div>
+        <h1 class="title">Imaginarium Pandora Deck</h1>
+        <h3 class="subtitle">Click on a card to learn more!</h3>
+    </div>
+
+</div>
+
 {% if cards %}
-    <ul>
-    {% for card in cards %}
-        <li><a href="{{ request.get_full_path }}card/{{ card.id }}/">{{ card.card_name }}</a></li>
+<div class="container">
+    <ul class="card-display">
+        {% for card in cards %}
+        <li>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+        <img class="img-responsive" src="{{ static_url }}images/{{ card.picture }}" alt="">
+        <a href="{{ request.get_full_path }}card/{{ card.id }}/">
+            <div class="overlay">
+                <h2>{{ card.card_name }}</h2>
+            </div>
+        </a>
+    </div>
+</div>
+
+{#        <div class="wrap">#}
+{#            <div class="cardimage">#}
+{#                <a href="{{ request.get_full_path }}card/{{ card.id }}/">#}
+{#                    <div class="overlay">#}
+{#                  <div class="text">{{ card.card_name }}</div>#}
+{#              </div>#}
+{#                    <img src="{{ static_url }}images/{{ card.picture }}" alt={{ card.card_name }} style="width:240px;height:240px;border:0;" class="image">#}
+{#                </a>#}
+{#            </div>#}
+{##}
+{#            <div class="deck-thumbnail-name">#}
+{#                <span class="deck-thumbnail-title">#}
+{#                    <a href="{{ request.get_full_path }}card/{{ card.id }}/">#}
+{#                        {{ card.card_name }}#}
+{#                    </a>#}
+{#                </span>#}
+{#            </div>#}
+{#     </div>#}
+     </li>
     {% endfor %}
     </ul>
+</div>
 {% else %}
-    <p>No Cards Found!</p>
+    <h2>No Cards Found!</h2>
 {% endif %}

@@ -22,9 +22,8 @@ class Card(models.Model):
     Create card objects that will hold the relevant features of a card and
     will contain and upload the image file
     """
-
     card_name = models.CharField(max_length=30)
-    date_added = models.DateTimeField("Date Added")
+    date_added = models.DateTimeField("Date Added", default=datetime.datetime.now, blank=True)
     # TODO: Add a ImageField.height_field and ImageField.width_field for consistency of images
     picture = models.ImageField(upload_to=get_image_path, blank=True, null=True)
     deck = models.ForeignKey(Deck, on_delete=models.CASCADE)

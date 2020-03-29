@@ -30,7 +30,7 @@ This application is built of the Django Framework. Here are the steps to run it.
 2. Make all database migrations with `python manage.py makemigrations`. Followed by
 `python manage.py migrate`.
 3. Install the pre-created fixtures. These fixtures contain the decks and their associated 
-images. `python manage.py loaddata imaginarium/fixtures.json`
+images. `python manage.py loaddata imaginarium/fixtures/*`
 4. Run the application server on localhost `python manage.py runserver`.
 5. Open your chosen browser and navigate to `localhost:8000`!
 6. Voila

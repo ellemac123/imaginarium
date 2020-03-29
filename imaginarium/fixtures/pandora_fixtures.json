@@ -1,0 +1,56 @@
+[
+    {
+        "pk": 1,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Flight Attendant",
+            "picture": "pandora/flight_attndnt_pandora.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Hungry Hungry Man",
+            "picture": "pandora/fridge_pandora.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Bored Lochness",
+            "picture": "pandora/lochness_pandora.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Moving Time",
+            "picture": "pandora/mountain_bug_pandora.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Totally Rainy Spies",
+            "picture": "pandora/totally_spies_pandora.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "cards.card",
+        "fields": {
+            "deck": 4,
+            "card_name": "Not All That...",
+            "picture": "pandora/traveling_pandora.jpg"
+        }
+    }
+]

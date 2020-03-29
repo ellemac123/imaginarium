@@ -20,7 +20,7 @@ ul {
     justify-content: center;
     align-content: center;
     grid-template-rows: auto;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
     list-style-type: none;
 
 }

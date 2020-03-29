@@ -4,7 +4,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 1,
-            "cover_image": "decks/original.jpg"
+            "cover_image": "original.jpg"
         }
     },
     {
@@ -12,7 +12,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 2,
-            "cover_image": "decks/Percephone.jpg"
+            "cover_image": "Percephone.jpg"
         }
     },
     {
@@ -20,7 +20,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 3,
-            "cover_image": "decks/chimera.jpg"
+            "cover_image": "chimera.jpg"
         }
     },
     {
@@ -28,7 +28,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 4,
-            "cover_image": "decks/Pandora.jpg"
+            "cover_image": "Pandora.jpg"
         }
     },
     {
@@ -36,7 +36,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 5,
-            "cover_image": "decks/odyssey.jpg"
+            "cover_image": "odyssey.jpg"
         }
     },
     {
@@ -44,7 +44,7 @@
         "model": "cards.deck",
         "fields": {
             "type": 6,
-            "cover_image": "decks/ariadne.jpg"
+            "cover_image": "ariadne.jpg"
         }
     }
 ]
